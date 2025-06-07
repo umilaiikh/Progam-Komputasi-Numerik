@@ -8,6 +8,12 @@ Kelompok A18
 - Mahirah Yasmin Aulia Mawahib (5025241095)
 
 Soal No. 28
+**Soal**
+**Pengerjaan Manual**
+
+![WhatsApp Image 2025-06-02 at 10 44 48_1ec427d4](https://github.com/user-attachments/assets/44e96797-3ee9-4dff-b922-c31b93d6be3b)
+
+
 **Penjelasan Code:**
 1. Pertama kita import library
    - numpy buat array dan operasi numerik cepat
@@ -93,6 +99,7 @@ hasil = stirling_interpolation(x_vals, y_vals, x0, xt)
 print(f"\nf({xt}) = {hasil}")
 print(f"Et ={abs((yt - hasil)/yt) * 100 : .2f}")
 ```
+
 
 **Output:**
 
