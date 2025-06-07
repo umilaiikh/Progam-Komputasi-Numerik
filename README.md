@@ -8,13 +8,20 @@ Kelompok A18
 - Mahirah Yasmin Aulia Mawahib (5025241095)
 
 Soal No. 28
-**Soal**
-**Pengerjaan Manual**
+**SOAL**
+
+![Screenshot 2025-06-07 192444](https://github.com/user-attachments/assets/4c2f7366-16aa-4e97-a37e-55b108ff2048)
+
+Carilah nilai f(x) ketika x = 16 dengan menggunakan Stirling dengan Xo = 15
+dan Y sebenarnya = 897104 [Cari juga nilai Et]
+
+
+**PENGERJAAN MANUAL**
 
 ![WhatsApp Image 2025-06-02 at 10 44 48_1ec427d4](https://github.com/user-attachments/assets/44e96797-3ee9-4dff-b922-c31b93d6be3b)
 
 
-**Penjelasan Code:**
+**CODE DAN PENJELASAN**
 1. Pertama kita import library
    - numpy buat array dan operasi numerik cepat
    - sympy buat operasi simbolik
@@ -101,6 +108,6 @@ print(f"Et ={abs((yt - hasil)/yt) * 100 : .2f}")
 ```
 
 
-**Output:**
+**OUTPUT:**
 
 ![Screenshot 2025-06-07 191755](https://github.com/user-attachments/assets/8d0bd5fd-65be-4f5b-ad6e-dc8a7d10f30a)
