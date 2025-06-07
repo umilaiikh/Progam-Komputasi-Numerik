@@ -7,8 +7,6 @@ Kelompok A18
 - Rhea Debora Sianturi (5025241095)
 - Mahirah Yasmin Aulia Mawahib (5025241095)
 
-Soal No. 28
-
 **SOAL**
 
 ![Screenshot 2025-06-07 192444](https://github.com/user-attachments/assets/4c2f7366-16aa-4e97-a37e-55b108ff2048)
