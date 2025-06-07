@@ -7,7 +7,7 @@ Kelompok A18
 - Rhea Debora Sianturi (5025241095)
 - Mahirah Yasmin Aulia Mawahib (5025241095)
 
-**SOAL**
+## **SOAL**
 
 ![Screenshot 2025-06-07 192444](https://github.com/user-attachments/assets/4c2f7366-16aa-4e97-a37e-55b108ff2048)
 
@@ -15,20 +15,20 @@ Carilah nilai f(x) ketika x = 16 dengan menggunakan Stirling dengan Xo = 15
 dan Y sebenarnya = 897104 [Cari juga nilai Et]
 
 
-**PENGERJAAN MANUAL**
+## **PENGERJAAN MANUAL**
 
 ![WhatsApp Image 2025-06-02 at 10 44 48_1ec427d4](https://github.com/user-attachments/assets/44e96797-3ee9-4dff-b922-c31b93d6be3b)
 
 
-**CODE DAN PENJELASAN**
-1. Pertama kita import library
+## **CODE DAN PENJELASAN**
+### 1. Pertama kita import library
    - numpy buat array dan operasi numerik cepat
    - sympy buat operasi simbolik
 ```
 import numpy as np
 from sympy import Rational, factorial, simplify
 ```
-2. Buat fungsi yang berguna untuk membuat tabel selisih hingga untuk data y, tabel selisih hingga penting buat metode interpolasi stirling sendiri
+### 2. Buat fungsi yang berguna untuk membuat tabel selisih hingga untuk data y, tabel selisih hingga penting buat metode interpolasi stirling sendiri
 ```
 def compute_diff_table(y_vals):
     n = len(y_vals)
@@ -41,7 +41,7 @@ def compute_diff_table(y_vals):
                 print(f"diff[{i}, {j}] = {round(diff[i, j], 2)}")
     return diff
 ```
-3. Lalu buat fungsi yang melakukan proses interpolasi stirling sendiri
+### 3. Lalu buat fungsi yang melakukan proses interpolasi stirling sendiri
    - kita konversi daftar nilai x dan nilai fungsi pada masing-masing x jadi array float
    - Lalu hitung h/selisih antar titik x(jadi disini setiap jarak antar titik tu sama)
    - Cari indeks titik tengahnya lalu hitung S dengan rumus (x-x0)/h
@@ -91,7 +91,7 @@ def stirling_interpolation(x_vals, y_vals, x0_val, x_target_val):
     y_interp = round(result, 2)
     return y_interp
 ```
-4. Lalu kita masukin data inputan sesuai pada soal yang ada, hasil kita panggil fungsi interpolasi stirling lalu disitu kita juga hitung ET nya, dengan rumus |(nilai asli - hasil interpolasi)/nilai asli| * 100
+### 4. Lalu kita masukin data inputan sesuai pada soal yang ada, hasil kita panggil fungsi interpolasi stirling lalu disitu kita juga hitung ET nya, dengan rumus |(nilai asli - hasil interpolasi)/nilai asli| * 100
 ```
 x_vals = [3, 6, 9, 12, 15, 18, 21, 24, 27]
 y_vals = [-741, -186, 32121, 184956, 634575, 1673874, 3741549, 7451256, 13620771]
@@ -107,6 +107,6 @@ print(f"Et ={abs((yt - hasil)/yt) * 100 : .2f}")
 ```
 
 
-**OUTPUT:**
+## **OUTPUT:**
 
 ![Screenshot 2025-06-07 191755](https://github.com/user-attachments/assets/8d0bd5fd-65be-4f5b-ad6e-dc8a7d10f30a)
