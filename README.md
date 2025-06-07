@@ -95,4 +95,5 @@ print(f"Et ={abs((yt - hasil)/yt) * 100 : .2f}")
 ```
 
 **Output:**
+
 ![Screenshot 2025-06-07 191755](https://github.com/user-attachments/assets/8d0bd5fd-65be-4f5b-ad6e-dc8a7d10f30a)
